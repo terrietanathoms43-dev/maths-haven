@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111f49">
+  <meta name="description" content="Maths Haven: Caribbean maths adventures for Grades 7–13. Play fractions, puzzles, solo and friendly challenges.">
+  <title>Maths Haven · Caribbean Maths, Levelled Up</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+:root{font-family:'DM Sans',system-ui,-apple-system,Segoe UI,sans-serif;color:#18284d;background:#f6f8fe;font-synthesis:none}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 4% 5%,#e6ecff 0,transparent 33%),radial-gradient(circle at 99% 36%,#fff1ce 0,transparent 32%),#f6f8fe;min-height:100vh}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #699ffb;outline-offset:3px}a{color:inherit;text-decoration:none}.app-shell{max-width:1220px;margin:auto;min-height:100vh;padding:0 28px;display:flex;flex-direction:column}.topbar{display:flex;justify-content:space-between;align-items:center;height:91px;gap:12px}.logo{display:flex;gap:11px;align-items:center}.logo-icon{display:grid;place-items:center;width:49px;height:49px;background:#13295e;color:#eec25d;border-radius:16px;box-shadow:0 5px 16px #112a6033}.logo-icon svg{width:34px}.wordmark{font:900 22px/.97 'Outfit',sans-serif;letter-spacing:-1px;color:#182a54}.wordmark span{color:#4667c5}.wordmark small{display:block;letter-spacing:5px;font-size:10px;margin-top:5px;color:#7a8ba9}.top-meta{display:flex;align-items:center;gap:12px}.carib-pill,.xp-pill{border-radius:100px;padding:10px 15px;background:white;color:#546788;font-weight:800;font-size:12px;box-shadow:0 5px 22px #1c37700d}.xp-pill{background:#fff4cf;color:#87600b}.footer{margin-top:auto;padding:30px 0 25px;display:flex;gap:16px;justify-content:space-between;color:#8792aa;font-size:12px;font-weight:600}.footer-dot{color:#d7aa3b}.main-layout{display:grid;grid-template-columns:minmax(0,1fr) 304px;gap:24px;align-items:start}.left-stack,.right-stack{display:flex;flex-direction:column;gap:22px}.hero{background:linear-gradient(120deg,#192f70,#243c89 59%,#425cad);border-radius:30px;min-height:235px;color:#fff;padding:33px 38px;position:relative;overflow:hidden;display:flex;align-items:center}.hero:before,.hero:after{position:absolute;content:'';border:1px solid #ffffff2a;border-radius:50%;width:280px;height:280px;right:-75px;top:-140px}.hero:after{width:190px;height:190px;right:70px;top:132px;background:#ffffff08;transform:rotate(10deg)}.hero-content{position:relative;z-index:1;max-width:530px}.eyebrow{color:#ffda89;font-weight:800;text-transform:uppercase;letter-spacing:1.6px;font-size:11px}.hero h1{font:800 clamp(30px,4vw,42px)/1.04 'Outfit',sans-serif;letter-spacing:-1.1px;margin:11px 0}.hero h1 em{font-style:normal;color:#f4cb70}.hero p{color:#dce4ff;margin:0;max-width:490px;line-height:1.5;font-size:14px}.hero-maths{position:absolute;right:37px;top:49px;transform:rotate(-10deg);font:700 24px 'Outfit',sans-serif;color:#c8daff80;letter-spacing:12px;line-height:2.1;white-space:pre;pointer-events:none}.panel{background:#fff;border:1px solid #e8ecf5;border-radius:24px;padding:24px;box-shadow:0 10px 28px #162d6508}.panel.slim{padding:22px}.panel-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}.panel h2,.sidebar-title{font:800 20px/1.2 'Outfit',sans-serif;letter-spacing:-.35px;margin:0;color:#17274f}.section-sub{font-size:12px;font-weight:600;color:#8a96ad}.grade-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:9px}.grade-chip{background:#f6f8fc;border:1px solid #e7ebf4;color:#475979;padding:12px 4px;border-radius:13px;text-align:center;font-weight:800;transition:.15s}.grade-chip small{display:block;font-weight:700;letter-spacing:.15px;font-size:10px;margin-top:2px;color:#929db0}.grade-chip.active{background:#182e71;color:white;border-color:#182e71;transform:translateY(-2px);box-shadow:0 7px 20px #1c368735}.grade-chip.active small{color:#d4ddff}.mode-grid,.skill-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.mode-card,.skill-card{min-width:0;text-align:left;background:#f9faff;border:1.5px solid #e9edf6;border-radius:18px;padding:17px 14px;transition:.15s}.mode-card:hover,.skill-card:hover{border-color:#789bf0}.mode-card.active,.skill-card.active{border-color:#4467c7;background:#f0f4ff;box-shadow:inset 0 0 0 1px #4467c7}.tile-icon{display:grid;place-items:center;width:41px;height:41px;border-radius:12px;background:#edf2ff;font-size:20px;margin-bottom:12px}.tile-icon.gold{background:#fff2d1}.tile-icon.green{background:#e4f9ef}.tile-title{font:800 15px 'Outfit',sans-serif;color:#1d305a;display:block}.tile-sub{font-size:11.5px;line-height:1.45;color:#8490aa;display:block;margin-top:5px}.compact-panel{padding-top:22px}.op-row,.rounds-row{display:flex;flex-wrap:wrap;gap:8px}.op-btn,.round-btn{border:1px solid #e2e8f2;background:#f7f9fd;border-radius:11px;color:#556884;padding:10px 13px;font-size:12px;font-weight:800}.op-btn.active,.round-btn.active{background:#e8efff;border-color:#809cea;color:#1f438f}.settings-line{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.minor-label{font-size:12px;font-weight:800;color:#506280}.form-duo{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:17px}.field label{display:block;margin-bottom:6px;font-size:12px;color:#687994;font-weight:800}.field input{width:100%;border:1px solid #dce4f0;border-radius:12px;padding:12px;background:#fff;color:#223659}.field input::placeholder{color:#a1aec1}.start-row{display:flex;align-items:center;gap:14px;margin-top:18px}.primary-btn{border:0;border-radius:14px;background:#efbc55;color:#1c2d4c;font-weight:900;padding:15px 24px;box-shadow:0 8px 18px #d8a94633;transition:.18s}.primary-btn:hover{background:#f7c870;transform:translateY(-1px)}.primary-btn.navy{background:#1d3b87;color:#fff;box-shadow:0 8px 18px #183a8428}.primary-btn.navy:hover{background:#294da1}.primary-btn.full{width:100%}.secondary-btn{border:1px solid #dce3f0;border-radius:13px;background:white;color:#41577e;padding:13px 18px;font-weight:800}.secondary-btn:hover{background:#f4f7fe}.start-note{color:#8a96ad;font-size:12px;font-weight:700}.side-feature{background:#fff8e7;border:1px solid #ffedc0;border-radius:24px;padding:24px}.side-feature .island{font-size:34px}.side-feature h3{font:800 20px 'Outfit',sans-serif;margin:13px 0 8px;color:#5d4215}.side-feature p{font-size:13px;line-height:1.6;color:#8b7651;margin:0 0 14px}.side-tag{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:#9a782d;font-weight:900}.stats-list{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:17px 0 2px}.stat{background:#f7f9fe;border-radius:15px;padding:14px}.stat b{font:900 23px 'Outfit',sans-serif;display:block;color:#213c85}.stat span{font-size:11px;color:#8290a8;font-weight:700}.grade-topic-list{display:grid;gap:9px;margin-top:16px}.topic{display:flex;gap:10px;align-items:center;font-size:12px;color:#667995;font-weight:700}.topic-check{display:grid;place-items:center;color:#36a37f;width:24px;height:24px;background:#e8faf1;border-radius:50%;font-weight:900}.aside-caption{color:#9ca6b8;font-size:11px;line-height:1.55;margin-top:12px}.friend-section{display:flex;gap:10px;flex-wrap:wrap;align-items:end}.code-label{font-size:11px;font-weight:800;color:#6f7e9a}.code-input{padding:12px 14px;border:1px solid #dce4ef;border-radius:12px;width:min(100%,280px);text-transform:uppercase;font-weight:800;color:#263d70;letter-spacing:.5px}.code-card{margin-top:15px;background:#f6f9ff;border:1px dashed #91a8dc;border-radius:14px;padding:14px}.code-value{display:block;font:800 16px/1.45 'Outfit',sans-serif;letter-spacing:1px;overflow-wrap:anywhere;color:#21438e}.code-card button{margin-top:9px}.mini-note{font-size:12px;line-height:1.5;color:#7d8ca6;margin-top:10px}.quiz-layout{max-width:900px;margin:18px auto 36px}.quiz-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px;gap:12px}.quiz-breadcrumb{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.crumb{font-size:12px;font-weight:800;color:#62749a;padding:8px 11px;background:#eaf0ff;border-radius:10px}.crumb.gold{background:#fff0ca;color:#8b6015}.quiz-grid{display:grid;grid-template-columns:minmax(0,1fr) 235px;gap:19px;align-items:start}.quiz-main{background:#fff;border-radius:26px;box-shadow:0 16px 32px #1932640a;border:1px solid #e9edf7;padding:28px}.progress-head{display:flex;justify-content:space-between;gap:12px;font-weight:800;font-size:13px;color:#7383a0;margin-bottom:11px}.progress-head strong{color:#233b77}.progress{height:9px;border-radius:10px;background:#eaf0fc;overflow:hidden}.progress span{display:block;height:100%;border-radius:10px;background:linear-gradient(90deg,#4e76d2,#82a4f5);transition:width .25s}.problem-zone{text-align:center;padding:31px 4px 24px}.puzzle-tag{font-size:11px;color:#3d6db4;letter-spacing:1.1px;text-transform:uppercase;font-weight:900}.problem-zone h2{font:800 clamp(23px,3.4vw,35px)/1.36 'Outfit',sans-serif;color:#1c305d;margin:17px auto;max-width:570px;overflow-wrap:break-word}.math-line{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}.mathfrac{display:inline-flex;vertical-align:middle;flex-direction:column;min-width:34px;align-items:center;line-height:1;white-space:nowrap}.mathfrac .num,.mathfrac .den{padding:4px 7px;font:700 .92em 'Outfit',sans-serif}.mathfrac .num{border-bottom:2px solid currentColor;width:100%}.math-sign{font-family:'Outfit',sans-serif}.question-subtitle{color:#8491a9;font-size:13px;line-height:1.6;max-width:560px;margin:0 auto}.answer-box{background:#f7f9fe;border-radius:19px;padding:21px;margin-top:7px}.answer-box label{font-size:12px;font-weight:800;color:#647899;display:block;margin-bottom:9px}.answer-field{display:flex;gap:9px}.answer-input{font:700 19px 'Outfit',sans-serif;min-width:0;flex:1;padding:13px 16px;background:#fff;border:1.5px solid #dce5f4;border-radius:13px;color:#182f61}.answer-input:focus{border-color:#7090db;outline:3px solid #93b5ff33}.answer-hint{font-size:11px;color:#8795af;margin-top:9px}.quiz-actions{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:15px}.text-btn{border:0;background:transparent;color:#5272ae;font-weight:800;font-size:12px;padding:10px}.hint-box,.result-box{border-radius:15px;padding:15px 17px;margin-top:15px;font-size:13px;line-height:1.6}.hint-box{background:#fff8e7;color:#83632c;border:1px solid #fce4ad}.result-box.good{background:#edfaf3;color:#20684e;border:1px solid #c3efdb}.result-box.bad{background:#fff6e7;color:#78501d;border:1px solid #f8deb5}.result-box.neutral{background:#f1f5ff;color:#34558a;border:1px solid #dae5ff}.result-box b{display:block;font-size:15px;margin-bottom:6px}.result-box p{margin:7px 0 0}.quiz-side{display:flex;flex-direction:column;gap:16px}.quiz-side .panel{padding:20px}.score-card{display:flex;align-items:center;justify-content:space-between;margin-top:14px;gap:10px}.score-name{color:#637590;font-size:12px;font-weight:800;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.score-points{color:#1a3c83;font:900 20px 'Outfit',sans-serif}.game-tip{background:#1f3679;border-radius:22px;color:#fff;padding:20px}.game-tip h3{font:800 18px 'Outfit',sans-serif;margin:10px 0}.game-tip p{font-size:12px;line-height:1.55;color:#cdd9ff}.turn-banner{background:#eaf1ff;border:1px solid #cadbfb;color:#294d8e;border-radius:13px;padding:13px 16px;font-weight:800;font-size:13px;margin:17px 0 0}.turn-banner.p2{background:#fff6df;border-color:#f6df9e;color:#79571a}.handoff-view{text-align:center;padding:55px 18px}.handoff-emoji{font-size:56px}.handoff-view h2{font:800 29px 'Outfit',sans-serif;color:#233d79}.handoff-view p{color:#7b8ba8;line-height:1.65}.result-page{max-width:800px;margin:30px auto}.result-hero{background:linear-gradient(120deg,#1b3273,#3b5cb5);border-radius:26px;color:#fff;text-align:center;padding:45px 28px}.result-hero .trophy{font-size:48px}.result-hero h1{font:900 34px 'Outfit',sans-serif;margin:13px 0 7px}.result-hero p{color:#d5e1ff;line-height:1.6;max-width:570px;margin:0 auto}.results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:18px 0}.result-stat{background:#fff;padding:22px;border:1px solid #e5ebf7;border-radius:17px;text-align:center}.result-stat b{font:900 28px 'Outfit',sans-serif;display:block;color:#1c397e}.result-stat span{font-size:12px;color:#8793a7;font-weight:800}.review-list{display:grid;gap:11px;margin-top:15px}.review-item{border:1px solid #e7ebf5;background:#fff;border-radius:14px;padding:14px 16px}.review-item .review-q{font-weight:800;font-size:13px;color:#2d416e}.review-item .review-a{font-size:12px;color:#71809c;margin-top:5px;line-height:1.6}.result-buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,30px);z-index:100;border-radius:100px;background:#1c366f;color:#fff;padding:13px 19px;box-shadow:0 10px 30px #0f224d33;opacity:0;pointer-events:none;font-size:13px;font-weight:700;transition:.22s;max-width:calc(100vw - 32px);text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.question-mark{color:#b6c6e8}.divider-line{height:1px;background:#edf0f5;margin:19px 0}.screen-reader{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}@media(max-width:930px){.main-layout{grid-template-columns:1fr}.right-stack{display:grid;grid-template-columns:1fr 1fr;align-items:start}.hero-maths{right:5px;opacity:.6}.footer{flex-direction:column;gap:5px}.quiz-grid{grid-template-columns:1fr}.quiz-side{display:grid;grid-template-columns:1fr 1fr}}@media(max-width:620px){.app-shell{padding:0 15px}.topbar{height:76px}.logo-icon{width:42px;height:42px;border-radius:13px}.logo-icon svg{width:29px}.wordmark{font-size:19px}.wordmark small{font-size:8px}.carib-pill{display:none}.xp-pill{padding:9px 10px;font-size:11px}.hero{padding:29px 25px;min-height:220px;border-radius:22px}.hero h1{font-size:31px}.hero p{font-size:13px}.hero-maths{right:-26px;top:105px;font-size:17px;opacity:.4}.panel{padding:18px;border-radius:19px}.panel h2{font-size:18px}.grade-grid{gap:6px}.grade-chip{padding:11px 2px;font-size:13px}.grade-chip small{font-size:9px}.mode-grid,.skill-grid{gap:7px}.mode-card,.skill-card{padding:13px 10px;border-radius:14px}.tile-icon{height:36px;width:36px;font-size:17px;margin-bottom:8px}.tile-title{font-size:12.5px}.tile-sub{font-size:10.3px}.right-stack{grid-template-columns:1fr}.form-duo{grid-template-columns:1fr}.quiz-layout{margin-top:8px}.quiz-main{padding:18px}.quiz-nav{align-items:flex-start}.quiz-breadcrumb{gap:5px}.crumb{padding:7px 8px;font-size:10px}.problem-zone{padding:29px 0 23px}.problem-zone h2{font-size:26px}.quiz-side{grid-template-columns:1fr}.quiz-side .game-tip{display:none}.answer-field{flex-direction:column}.primary-btn{padding:13px 17px}.answer-input{width:100%}.result-hero{padding:34px 18px}.results-grid{gap:7px}.result-stat{padding:15px 5px}.result-stat b{font-size:23px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}}
+
+  </style>
+
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a href="#" class="logo" id="home-link" aria-label="Maths Haven home">
+        <span class="logo-icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M13 43 23 12l9 17 9-17 10 31" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 49h40" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><circle cx="32" cy="31" r="4" fill="currentColor"/></svg></span>
+        <span class="wordmark">Maths<span>Haven</span><small>CARIBBEAN MATHS</small></span>
+      </a>
+      <div class="top-meta"><span class="carib-pill">🌴 Made for the Caribbean</span><span id="xp-pill" class="xp-pill">✦ 0 XP</span></div>
+    </header>
+
+    <main id="app" aria-live="polite"></main>
+
+    <footer class="footer"><span>Maths Haven <span class="footer-dot">✦</span> Learn. Solve. Level up.</span><span>Caribbean curriculum-inspired • Not affiliated with CXC</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script>
+/* Maths Haven — independent, dependency-free Caribbean mathematics game. */
+'use strict';
+const $ = selector => document.querySelector(selector);
+const app = $('#app');
+const storeKey = 'islandmath.stats.v1';
+const fallbackStats = {xp:0, played:0, correct:0, total:0, best:0, history:[]};
+let stats;
+try {stats = {...fallbackStats,...JSON.parse(localStorage.getItem(storeKey) || '{}')};} catch {stats={...fallbackStats};}
+const cfg = {grade:9,mode:'solo',skill:'mixed',op:'mix',count:10,p1:'Player 1',p2:'Player 2',joinCode:'',challengeCode:''};
+let session = null;
+let toastTimer = null;
+const levels = {
+  7:{title:'Building foundations',topics:['Number sense & fractions','Basic measurement','Patterns & arithmetic']},
+  8:{title:'Reasoning with numbers',topics:['Ratios & percentages','Introductory algebra','Area and geometry']},
+  9:{title:'Ready for CSEC',topics:['Equations & statistics','Pythagoras & sequences','Consumer arithmetic']},
+  10:{title:'CSEC Mathematics',topics:['Algebra & graphs','Geometry & trigonometry','Sequences & computation']},
+  11:{title:'CSEC Exam Challenge',topics:['Functions & matrices','Probability & statistics','Geometry & trigonometry']},
+  12:{title:'CAPE Unit 1 Explorer',topics:['Functions & algebra','Differentiation & integration','Vectors & trigonometry']},
+  13:{title:'CAPE Unit 2 Explorer',topics:['Series & counting','Complex numbers & matrices','Calculus & probability']}
+};
+const opLabels={add:'Add (+)',sub:'Subtract (−)',mul:'Multiply (×)',div:'Divide (÷)',mix:'Combination'};
+const opSymbols={add:'+',sub:'−',mul:'×',div:'÷'};
+const skillLabels={fractions:'Fraction Lab',puzzles:'Puzzle Quest',mixed:'Mixed Arena'};
+const modeLabels={solo:'Solo Practice',duel:'Local 2-Player Duel',friend:'Friend Challenge'};
+const rnd=(lo,hi,random=Math.random)=>Math.floor(random()*(hi-lo+1))+lo;
+const pick=(array,random=Math.random)=>array[rnd(0,array.length-1,random)];
+const gcd=(a,b)=>{a=Math.abs(a);b=Math.abs(b);while(b){const t=a%b;a=b;b=t}return a||1;};
+const R=(n,d=1)=>{if(d===0)throw Error('Zero denominator');if(d<0){n=-n;d=-d}const f=gcd(n,d);return {n:n/f,d:d/f};};
+const add=(a,b)=>R(a.n*b.d+b.n*a.d,a.d*b.d);
+const sub=(a,b)=>R(a.n*b.d-b.n*a.d,a.d*b.d);
+const mul=(a,b)=>R(a.n*b.n,a.d*b.d);
+const div=(a,b)=>R(a.n*b.d,a.d*b.n);
+const equal=(a,b)=>Boolean(a&&b&&Math.abs(a.n*b.d-b.n*a.d)<1e-8);
+const compare=(a,b)=>a.n*b.d-b.n*a.d;
+const fractionText=a=>a.d===1?String(a.n):`${a.n}/${a.d}`;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fractionHTML=a=>a.d===1?`<span>${a.n}</span>`:`<span class="mathfrac"><span class="num">${a.n}</span><span class="den">${a.d}</span></span>`;
+const mathLine=(parts)=>`<div class="math-line">${parts.map(p=>typeof p==='string'?`<span class="math-sign">${esc(p)}</span>`:fractionHTML(p)).join('')}</div>`;
+const formatSigned=(x,power='x')=>`${x<0?'−':'+'} ${Math.abs(x)}${power}`;
+function parseFraction(raw){
+  let text=String(raw||'').trim().replace(/−/g,'-').replace(/,/g,'');
+  if(!text)return null;
+  if(text.endsWith('%'))text=text.slice(0,-1).trim(); // percent questions request the numerical percentage
+  const mixed=text.match(/^([+-]?\d+)\s+(\d+)\s*\/\s*(\d+)$/);
+  if(mixed){const whole=Number(mixed[1]),top=Number(mixed[2]),bottom=Number(mixed[3]);if(!bottom||top>=bottom)return null;return R((Math.sign(whole)||1)*(Math.abs(whole)*bottom+top),bottom);}
+  const simple=text.match(/^([+-]?\d+)\s*\/\s*([+-]?\d+)$/);
+  if(simple){const n=Number(simple[1]),d=Number(simple[2]);return d?R(n,d):null;}
+  if(/^[+-]?(?:\d+\.?\d*|\.\d+)$/.test(text)){
+    const x=Number(text);if(!Number.isFinite(x))return null;
+    const decimals=(text.split('.')[1]||'').length;
+    return decimals<=7?R(Math.round(x*10**decimals),10**decimals):null;
+  }
+  return null;
+}
+function hashCode(n){let t=n>>>0;return ()=>{t+=0x6d2b79f5;let z=t;z=Math.imul(z^(z>>>15),z|1);z^=z+Math.imul(z^(z>>>7),z|61);return ((z^(z>>>14))>>>0)/4294967296;};}
+function numberOf(n){return n.toLocaleString('en-JM');}
+function createFraction(grade,random){
+  const denMax=grade<=8?8:grade<=11?13:19;
+  const nMax=grade<=8?7:grade<=11?15:25;
+  let n=rnd(1,nMax,random),d=rnd(2,denMax,random);
+  if(grade>=10&&random()<.24)n*=-1;
+  if(grade>=9&&random()<.22)n+=d;
+  return R(n,d);
+}
+function generateFraction(grade,operation,random){
+  const op=operation==='mix'?pick(['add','sub','mul','div','combo'],random):operation;
+  let a=createFraction(grade,random),b=createFraction(grade,random);
+  if(b.n===0)b=R(1,2); // Never allow a zero divisor.
+  if(op==='sub'&&grade<=8&&compare(a,b)<0){[a,b]=[b,a];}
+  const f={add,sub,mul,div};
+  if(op==='combo'){
+    let c=createFraction(grade,random);
+    if(c.n===0)c=R(2,3);
+    const variant=rnd(0,1,random);
+    if(variant===0){
+      const inner=mul(b,c),ans=add(a,inner);
+      return {kind:'fraction',topic:'Order of operations',prompt:mathLine([a,'+',b,'×',c]),answer:ans,
+        hint:'Multiply before you add. Use common denominators when adding.',
+        explanation:`Work from left to right with the correct order: ${fractionText(b)} × ${fractionText(c)} = ${fractionText(inner)}. Then ${fractionText(a)} + ${fractionText(inner)} = ${fractionText(ans)}.`};
+    }
+    const inner=add(a,b),ans=div(inner,c);
+    return {kind:'fraction',topic:'Brackets & division',prompt:mathLine(['(',a,'+',b,')','÷',c]),answer:ans,
+      hint:'Work inside the brackets first, then multiply by the reciprocal.',
+      explanation:`Inside brackets: ${fractionText(a)} + ${fractionText(b)} = ${fractionText(inner)}. Divide by ${fractionText(c)} to get ${fractionText(ans)}.`};
+  }
+  const answer=f[op](a,b);
+  const hints={add:'Find a common denominator, then add the numerators.',sub:'Find a common denominator, then subtract the numerators.',mul:'Multiply numerators together and denominators together. Simplify.',div:'Keep, change, flip: multiply by the reciprocal of the second fraction.'};
+  const explanation={
+    add:`Use a common denominator of ${a.d*b.d/gcd(a.d,b.d)}, then add. ${fractionText(a)} + ${fractionText(b)} = ${fractionText(answer)}.`,
+    sub:`Use a common denominator of ${a.d*b.d/gcd(a.d,b.d)}, then subtract. ${fractionText(a)} − ${fractionText(b)} = ${fractionText(answer)}.`,
+    mul:`Multiply across and simplify: (${a.n} × ${b.n})/(${a.d} × ${b.d}) = ${fractionText(answer)}.`,
+    div:`Multiply by the reciprocal: ${fractionText(a)} × ${fractionText(R(b.d,b.n))} = ${fractionText(answer)}.`
+  };
+  return {kind:'fraction',topic:opLabels[op],prompt:mathLine([a,opSymbols[op],b]),answer,hint:hints[op],explanation:explanation[op]};
+}
+function Q(topic,prompt,answer,hint,explanation){return {kind:'puzzle',topic,prompt,answer:typeof answer==='number'?R(answer):answer,hint,explanation};}
+const puzzles={
+7:[
+  random=>{const each=rnd(150,320,random),count=rnd(2,4,random),change=rnd(1,4,random)*100;const paid=each*count+change;
+    return Q('Market Maths',`You buy ${count} patties for J$${each} each at a Jamaican shop. You pay J$${numberOf(paid)}. How much change do you get (J$)?`,change,'Cost = price × quantity. Then subtract from the amount paid.',`${count} × ${each} = J$${each*count}. J$${paid} − J$${each*count} = J$${change}.`);},
+  random=>{const d=pick([2,3,4,5],random),n=rnd(1,d-1,random),count=d*rnd(4,12,random);const answer=count*n/d;
+    return Q('Fraction of a Set',`A school club has ${count} members. If ${fractionText(R(n,d))} of them play cricket, how many members play cricket?`,answer,'Divide the total by the denominator, then multiply by the numerator.',`${count} ÷ ${d} × ${n} = ${answer} members.`);},
+  random=>{const st=rnd(1,9,random),step=rnd(2,8,random),seq=[0,1,2,3].map(i=>st+i*step),answer=st+4*step;
+    return Q('Number Pattern',`Complete the pattern: ${seq.join(', ')}, ___. What number comes next?`,answer,'Find the difference between consecutive terms.',`The pattern increases by ${step} each time, so the next term is ${answer}.`);},
+  random=>{const l=rnd(7,24,random),w=rnd(3,14,random),p=2*(l+w);
+    return Q('Perimeter',`A rectangular school garden measures ${l} m by ${w} m. What is its perimeter in metres?`,p,'Add all four sides, or use 2(length + width).',`2(${l} + ${w}) = ${p} m.`);}
+],
+8:[
+  random=>{const x=rnd(2,13,random),a=rnd(2,6,random),b=rnd(3,16,random),total=a*x+b;
+    return Q('Algebra',`Solve for x: ${a}x + ${b} = ${total}.`,x,'Subtract the constant and divide by the coefficient of x.',`${a}x = ${total-b}; x = ${x}.`);},
+  random=>{const a=rnd(2,5,random),b=rnd(2,7,random),k=rnd(3,9,random),mango=a*k,guava=b*k;
+    return Q('Ratio',`A juice stand mixes mango and guava in a ratio of ${a}:${b}. If it uses ${mango} litres of mango juice, how many litres of guava juice are needed?`,guava,'Find the number of litres per ratio part.',`${mango} ÷ ${a} = ${k} litres per part. ${b} × ${k} = ${guava} litres.`);},
+  random=>{const base=rnd(5,20,random),height=2*rnd(3,12,random),area=base*height/2;
+    return Q('Area',`A triangular flag has a base of ${base} cm and height of ${height} cm. Find its area in cm².`,area,'Triangle area = ½ × base × height.',`½ × ${base} × ${height} = ${area} cm².`);},
+  random=>{const price=100*rnd(5,35,random),percent=pick([10,20,25],random),sale=price*(100-percent)/100;
+    return Q('Consumer Arithmetic',`A school bag costs J$${numberOf(price)} and is reduced by ${percent}%. What is its sale price in J$?`,sale,'Find the discount, then subtract from the original price.',`Discount = ${percent}% of ${price} = J$${price-sale}; sale price = J$${sale}.`);}
+],
+9:[
+  random=>{const [a,b,c]=pick([[3,4,5],[5,12,13],[8,15,17]],random),k=rnd(1,4,random);
+    return Q('Pythagoras',`A right-angled triangle has legs ${a*k} cm and ${b*k} cm. Find the hypotenuse in cm.`,c*k,'Use a² + b² = c².',`√(${a*k}² + ${b*k}²) = ${c*k} cm.`);},
+  random=>{const a=rnd(4,20,random),b=rnd(4,20,random),c=rnd(4,20,random);const sum=a+b+c;const mean=R(sum,3);
+    return Q('Statistics',`Three teams score ${a}, ${b}, and ${c} points. Find their mean score.`,mean,'Add the scores and divide by 3.',`(${a} + ${b} + ${c}) ÷ 3 = ${fractionText(mean)}.`);},
+  random=>{const p=1000*rnd(1,8,random),rate=pick([5,8,10],random),years=rnd(2,4,random),interest=p*rate*years/100;
+    return Q('Simple Interest',`J$${numberOf(p)} is invested at ${rate}% simple interest per year for ${years} years. Find the interest earned (J$).`,interest,'Use I = PRT/100, with T in years.',`I = ${p} × ${rate} × ${years} ÷ 100 = J$${interest}.`);},
+  random=>{const x=rnd(3,16,random),y=rnd(1,8,random),sum=x+y,diff=x-y;
+    return Q('Simultaneous Equations',`If x + y = ${sum} and x − y = ${diff}, what is x?`,x,'Add both equations to eliminate y.',`2x = ${sum+diff}, therefore x = ${x}.`);}
+],
+10:[
+  random=>{const a=rnd(2,10,random),b=rnd(2,10,random),hi=Math.max(a,b),sum=a+b,product=a*b;
+    return Q('Quadratic Equations',`Find the larger root of x² − ${sum}x + ${product} = 0.`,hi,'Find two positive numbers whose sum is the coefficient of x and whose product is the constant.',`(x − ${a})(x − ${b}) = 0. The roots are ${a} and ${b}; the larger is ${hi}.`);},
+  random=>{const first=rnd(2,13,random),d=rnd(2,8,random),n=rnd(8,17,random),value=first+(n-1)*d;
+    return Q('Arithmetic Sequences',`A sequence starts ${first}, ${first+d}, ${first+2*d}, ... . What is term ${n}?`,value,'Use Tₙ = a + (n − 1)d.',`T${n} = ${first} + (${n} − 1) × ${d} = ${value}.`);},
+  random=>{const x=rnd(-4,5,random),y=rnd(-5,7,random),dx=2*rnd(1,4,random),m=rnd(-4,6,random)||2,dy=dx*m;
+    return Q('Coordinate Geometry',`Find the gradient of the line through (${x}, ${y}) and (${x+dx}, ${y+dy}).`,m,'Gradient = change in y ÷ change in x.',`m = (${y+dy} − ${y}) / (${x+dx} − ${x}) = ${m}.`);},
+  random=>{const total=360,first=rnd(40,130,random),second=rnd(50,140,random),last=total-first-second;
+    return Q('Geometry',`Angles around a point measure ${first}°, ${second}°, and x°. Find x.`,last,'Angles around a point total 360°.',`x = 360 − ${first} − ${second} = ${last}°.`);}
+],
+11:[
+  random=>{const h=2*rnd(6,19,random),ans=h/2;
+    return Q('Trigonometry',`A right triangle has a hypotenuse of ${h} cm and an angle of 30°. Find the side opposite the 30° angle (cm).`,ans,'Use sine: opposite/hypotenuse = sin 30° = 1/2.',`Opposite = ${h} × 1/2 = ${ans} cm.`);},
+  random=>{const red=rnd(2,9,random),blue=rnd(2,9,random),ans=R(red,red+blue);
+    return Q('Probability',`A bag has ${red} red and ${blue} blue marbles. What is the probability of selecting a red marble?`,ans,'Probability = favourable outcomes ÷ total outcomes.',`P(red) = ${red}/${red+blue} = ${fractionText(ans)}.`);},
+  random=>{const a=rnd(2,5,random),b=rnd(1,8,random),x=rnd(2,5,random),ans=a*x*x+b;
+    return Q('Functions',`Let f(x) = ${a}x + ${b} and g(x) = x². Find f(g(${x})).`,ans,'Find g(x) first; put that value into f.',`g(${x}) = ${x*x}; f(${x*x}) = ${a}(${x*x}) + ${b} = ${ans}.`);},
+  random=>{const a=rnd(1,7,random),b=rnd(1,5,random),c=rnd(1,6,random),d=rnd(2,8,random),ans=a*d-b*c;
+    return Q('Matrices',`Find the determinant of the matrix [[${a}, ${b}], [${c}, ${d}]].`,ans,'For a 2×2 matrix, determinant = ad − bc.',`${a} × ${d} − ${b} × ${c} = ${ans}.`);}
+],
+12:[
+  random=>{const a=rnd(2,7,random),b=rnd(-6,9,random),c=rnd(1,11,random),x=rnd(1,6,random),ans=2*a*x+b;
+    return Q('CAPE Calculus I',`For y = ${a}x² ${formatSigned(b)} ${formatSigned(c,'')}, find dy/dx when x = ${x}.`,ans,'Differentiate each term: d(ax²)/dx = 2ax; constants become 0.',`dy/dx = ${2*a}x ${formatSigned(b,'')}; at x=${x}, dy/dx=${ans}.`);},
+  random=>{const base=pick([2,3,4,5],random),exp=rnd(2,4,random),power=base**exp;
+    return Q('CAPE Logarithms',`If log base ${base} of x = ${exp}, find x.`,power,'Convert the logarithmic equation to exponential form.',`x = ${base}^${exp} = ${power}.`);},
+  random=>{const k=2*rnd(1,5,random),upper=rnd(2,6,random),ans=k*upper*upper/2;
+    return Q('CAPE Integration',`Evaluate the definite integral ∫₀^${upper} ${k}x dx.`,ans,'The antiderivative of kx is kx²/2. Apply the limits.',`[${k}x²/2] from 0 to ${upper} gives ${ans}.`);},
+  random=>{const a=rnd(-4,6,random),b=rnd(-4,6,random),c=rnd(-4,6,random),d=rnd(-4,6,random),ans=a*c+b*d;
+    return Q('CAPE Vectors',`Find the dot product of vectors (${a}, ${b}) and (${c}, ${d}).`,ans,'Multiply corresponding components, then add.',`${a} × ${c} + ${b} × ${d} = ${ans}.`);}
+],
+13:[
+  random=>{const n=rnd(5,9,random),k=pick([2,3],random),fac=x=>{let v=1;for(let i=2;i<=x;i++)v*=i;return v;},ans=fac(n)/(fac(k)*fac(n-k));
+    return Q('CAPE Counting',`How many different groups of ${k} students can be chosen from ${n} students?`,ans,'Order does not matter. Use nCr = n!/[r!(n − r)!].',`${n}C${k} = ${ans}.`);},
+  random=>{const first=rnd(1,8,random),d=rnd(2,7,random),n=rnd(7,16,random),last=first+(n-1)*d,ans=n*(first+last)/2;
+    return Q('CAPE Series',`An arithmetic sequence has first term ${first}, common difference ${d}, and ${n} terms. Find the sum.`,ans,'Use Sₙ = n/2 × [2a + (n − 1)d].',`S${n} = ${n}/2 × (${first} + ${last}) = ${ans}.`);},
+  random=>{const [a,b,c]=pick([[3,4,5],[5,12,13],[8,15,17]],random),k=rnd(1,3,random),real=a*k,imag=b*k,ans=c*k;
+    return Q('CAPE Complex Numbers',`Find the modulus |${real} + ${imag}i|.`,ans,'For a + bi, modulus = √(a² + b²).',`√(${real}² + ${imag}²) = ${ans}.`);},
+  random=>{const k=rnd(2,6,random),base=rnd(1,6,random),x=rnd(2,4,random),ans=add(R(k*x**3,3),R(base));
+    return Q('CAPE Differential Equations',`Given dy/dx = ${k}x² and y(0) = ${base}, find y(${x}).`,ans,'Integrate dy/dx, then use the initial condition to find the constant.',`y = ${k}x³/3 + C. Since y(0) = ${base}, C = ${base}. Therefore y(${x}) = ${fractionText(add(R(k*x**3,3),R(base)))}.`);},
+  random=>{const p=pick([2,3,4],random),n=pick([3,4],random);
+    return Q('CAPE Probability',`A fair ${p}-sided spinner is spun ${n} times. What is the probability that a specified result occurs on exactly one spin? Give a fraction.`,R(n*(p-1)**(n-1),p**n),'Use binomial probability: n × p(success) × p(failure)^(n−1).',`P = ${n} × (1/${p}) × (${p-1}/${p})^${n-1} = ${fractionText(R(n*(p-1)**(n-1),p**n))}.`);}
+]
+};
+function generatePuzzle(grade,random){return pick(puzzles[grade],random)(random);}
+function generateSet(grade,skill,op,count,seed){
+  const random=hashCode(seed),list=[];
+  for(let i=0;i<count;i++){
+    let type=skill;
+    if(type==='mixed')type=i%2===0?'fractions':'puzzles';
+    const q=type==='fractions'?generateFraction(grade,op,random):generatePuzzle(grade,random);
+    q.id=i+1;
+    list.push(q);
+  }
+  return list;
+}
+const codeMap={fractions:'F',puzzles:'P',mixed:'M'};
+const reverseCode={F:'fractions',P:'puzzles',M:'mixed'};
+const opMap={add:'A',sub:'S',mul:'M',div:'D',mix:'X'};
+const reverseOp={A:'add',S:'sub',M:'mul',D:'div',X:'mix'};
+function makeCode(){const seed=Math.floor(Math.random()*900000)+100000;return `IMA-${seed}-G${cfg.grade}-${codeMap[cfg.skill]}${opMap[cfg.op]}-${cfg.count}`;}
+function decodeCode(code){const match=String(code).trim().toUpperCase().match(/^IMA-(\d{6})-G(7|8|9|10|11|12|13)-([FPM])([ASMDX])-(5|10|15)$/);if(!match)return null;return {seed:Number(match[1]),grade:Number(match[2]),skill:reverseCode[match[3]],op:reverseOp[match[4]],count:Number(match[5]),code:match[0]};}
+function saveStats(){try{localStorage.setItem(storeKey,JSON.stringify(stats));}catch{}refreshXP();}
+function refreshXP(){$('#xp-pill').textContent=`✦ ${stats.xp} XP`;}
+function toast(msg){const el=$('#toast');el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2400);}
+const btn=(label,id,cls='secondary-btn')=>`<button class="${cls}" id="${id}" type="button">${esc(label)}</button>`;
+function gradeButtons(){return Array.from({length:7},(_,i)=>i+7).map(g=>`<button class="grade-chip ${cfg.grade===g?'active':''}" data-grade="${g}" aria-pressed="${cfg.grade===g}">${g}<small>${g<=9?'Lower':g<=11?'CSEC':'CAPE'}</small></button>`).join('');}
+function modeCard(mode,emoji,title,subtitle,iconStyle=''){return `<button class="mode-card ${cfg.mode===mode?'active':''}" data-mode="${mode}" aria-pressed="${cfg.mode===mode}"><span class="tile-icon ${iconStyle}">${emoji}</span><span class="tile-title">${title}</span><span class="tile-sub">${subtitle}</span></button>`;}
+function skillCard(skill,emoji,title,subtitle,iconStyle=''){return `<button class="skill-card ${cfg.skill===skill?'active':''}" data-skill="${skill}" aria-pressed="${cfg.skill===skill}"><span class="tile-icon ${iconStyle}">${emoji}</span><span class="tile-title">${title}</span><span class="tile-sub">${subtitle}</span></button>`;}
+function home(){
+  session=null;
+  const data=levels[cfg.grade], accuracy=stats.total?Math.round(stats.correct/stats.total*100):0;
+  app.innerHTML=`<div class="main-layout">
+    <div class="left-stack">
+      <section class="hero"><div class="hero-content"><div class="eyebrow">✦ Your next maths adventure starts here</div><h1>Big maths energy.<br><em>Island style.</em></h1><p>From Grade 7 foundations to CAPE brain teasers. Learn fractions, solve clever puzzles, and challenge your friends.</p></div><div class="hero-maths" aria-hidden="true">½  ×  ¾<br>π  ∑  x²<br>⅔  ÷  ⅖</div></section>
+      <section class="panel"><div class="panel-heading"><h2>01 <span class="question-mark">/</span> Choose your grade</h2><span class="section-sub">Grades 7–13</span></div><div class="grade-grid">${gradeButtons()}</div></section>
+      <section class="panel"><div class="panel-heading"><h2>02 <span class="question-mark">/</span> How will you play?</h2></div><div class="mode-grid">${modeCard('solo','🎯','Play solo','Practice and improve at your own pace.')}${modeCard('duel','⚡','2-player duel','Take turns on the same device.','gold')}${modeCard('friend','🔗','Friend code','Play the same round on separate devices.','green')}</div>
+      <div id="mode-options">${modeOptions()}</div></section>
+      <section class="panel"><div class="panel-heading"><h2>03 <span class="question-mark">/</span> Pick a challenge</h2></div><div class="skill-grid">${skillCard('fractions','½','Fraction Lab','Add, subtract, multiply, divide.','gold')}${skillCard('puzzles','🧩','Puzzle Quest','Algebra, geometry, CSEC & CAPE.')}${skillCard('mixed','🌟','Mixed Arena','Fractions plus grade-level puzzles.','green')}</div>
+      <div id="fraction-ops">${fractionOptions()}</div><div class="divider-line"></div><div class="settings-line"><span class="minor-label">Questions per round</span><div class="rounds-row">${[5,10,15].map(count=>`<button class="round-btn ${cfg.count===count?'active':''}" data-count="${count}">${count}</button>`).join('')}</div></div>
+      <div class="start-row">${btn(cfg.mode==='duel'?'Start 2-Player Duel':cfg.mode==='friend'?'Start Friend Challenge':'Start Playing ✦','start-btn','primary-btn')}<span class="start-note">✓ Free to play &nbsp; ✓ No sign-in</span></div></section>
+    </div>
+    <aside class="right-stack"><section class="side-feature"><span class="side-tag">On the island</span><div class="island">🏝️</div><h3>Made for our classrooms.</h3><p>Maths problems with patties, cricket, J$ prices, school clubs, and the concepts Caribbean students need.</p><span class="side-tag">CSEC foundation • CAPE extension</span></section>
+    <section class="panel slim"><h2 class="sidebar-title">Your maths journey</h2><div class="stats-list"><div class="stat"><b>${stats.xp}</b><span>Total XP</span></div><div class="stat"><b>${accuracy}%</b><span>Accuracy</span></div><div class="stat"><b>${stats.played}</b><span>Rounds played</span></div><div class="stat"><b>${stats.best}</b><span>Best streak</span></div></div><p class="aside-caption">Progress is saved on this device.</p></section>
+    <section class="panel slim"><span class="side-tag">Grade ${cfg.grade} pathway</span><h2 style="margin-top:8px">${data.title}</h2><div class="grade-topic-list">${data.topics.map(t=>`<div class="topic"><span class="topic-check">✓</span>${esc(t)}</div>`).join('')}</div><p class="aside-caption">Grade-level puzzles are curriculum-inspired practice, not official CXC examination questions.</p></section></aside>
+  </div>`;
+  for(const el of app.querySelectorAll('[data-grade]'))el.addEventListener('click',()=>{cfg.grade=Number(el.dataset.grade);cfg.challengeCode='';home();});
+  for(const el of app.querySelectorAll('[data-mode]'))el.addEventListener('click',()=>{cfg.mode=el.dataset.mode;cfg.challengeCode='';home();});
+  for(const el of app.querySelectorAll('[data-skill]'))el.addEventListener('click',()=>{cfg.skill=el.dataset.skill;cfg.challengeCode='';home();});
+  for(const el of app.querySelectorAll('[data-count]'))el.addEventListener('click',()=>{cfg.count=Number(el.dataset.count);cfg.challengeCode='';home();});
+  for(const el of app.querySelectorAll('[data-op]'))el.addEventListener('click',()=>{cfg.op=el.dataset.op;cfg.challengeCode='';home();});
+  $('#start-btn').addEventListener('click',startSession);
+  if($('#name-p1'))$('#name-p1').addEventListener('input',e=>cfg.p1=e.target.value);
+  if($('#name-p2'))$('#name-p2').addEventListener('input',e=>cfg.p2=e.target.value);
+  if($('#join-code'))$('#join-code').addEventListener('input',e=>cfg.joinCode=e.target.value);
+  if($('#join-btn'))$('#join-btn').addEventListener('click',joinChallenge);
+}
+function modeOptions(){
+  if(cfg.mode==='duel')return `<div class="form-duo"><div class="field"><label for="name-p1">Player 1 name</label><input id="name-p1" placeholder="Player 1" maxlength="20" value="${esc(cfg.p1)}"></div><div class="field"><label for="name-p2">Player 2 name</label><input id="name-p2" placeholder="Player 2" maxlength="20" value="${esc(cfg.p2)}"></div></div><p class="mini-note">Each player answers the same question in turns. The solution appears only after both players have answered.</p>`;
+  if(cfg.mode==='friend')return `<div class="divider-line"></div><div class="friend-section"><div><label class="code-label" for="join-code">Have a friend's challenge code?</label><br><input id="join-code" class="code-input" placeholder="IMA-123456-G9-MX-10" value="${esc(cfg.joinCode)}"></div>${btn('Join code','join-btn')}</div><p class="mini-note">Or choose your grade and skills and select Start Friend Challenge to create a code. Share it so friends can play an identical set of questions. Scores are compared by sharing results, not synced live.</p>`;
+  return '';
+}
+function fractionOptions(){
+  if(cfg.skill==='puzzles')return `<p class="mini-note">Puzzle Quest automatically chooses problems suitable for your selected grade.</p>`;
+  return `<div class="divider-line"></div><div class="minor-label" style="margin-bottom:10px">Fraction operations</div><div class="op-row">${Object.entries(opLabels).map(([k,v])=>`<button class="op-btn ${cfg.op===k?'active':''}" data-op="${k}" aria-pressed="${cfg.op===k}">${v}</button>`).join('')}</div>`;
+}
+function joinChallenge(){
+  const decoded=decodeCode(cfg.joinCode);
+  if(!decoded){toast('That code is not valid. Check each character.');return;}
+  Object.assign(cfg,{grade:decoded.grade,skill:decoded.skill,op:decoded.op,count:decoded.count,challengeCode:decoded.code});
+  createSession('friend',decoded.seed,decoded.code);
+}
+function startSession(){
+  if(cfg.mode==='duel'){
+    cfg.p1=cfg.p1.trim()||'Player 1';cfg.p2=cfg.p2.trim()||'Player 2';
+    if(cfg.p1.toLowerCase()===cfg.p2.toLowerCase()){toast('Choose different player names for the duel.');return;}
+  }
+  if(cfg.mode==='friend' && !cfg.challengeCode){const code=makeCode(),decoded=decodeCode(code);createSession('friend',decoded.seed,code);return;}
+  if(cfg.mode==='friend' && cfg.challengeCode){const decoded=decodeCode(cfg.challengeCode);createSession('friend',decoded.seed,cfg.challengeCode);return;}
+  createSession(cfg.mode,Math.floor(Math.random()*4294967295));
+}
+function createSession(mode,seed,code=''){
+  const questions=generateSet(cfg.grade,cfg.skill,cfg.op,cfg.count,seed);
+  session={mode,seed,code,grade:cfg.grade,skill:cfg.skill,op:cfg.op,questions,idx:0,turn:0,stage:'question',answers:[[],[]],scores:[0,0],streaks:[0,0],best:0,hintShown:false,players:[cfg.p1||'Player 1',cfg.p2||'Player 2'],finished:false};
+  if(mode==='friend')session.players[0]=cfg.p1||'Player 1';
+  window.scrollTo?.({top:0,behavior:'smooth'});
+  renderQuiz();
+}
+function cancel(){if(confirm('End this round and return to the home screen?'))home();}
+function record(raw,skipped=false){
+  if(!session||session.stage!=='question')return;
+  const s=session,q=s.questions[s.idx],parsed=skipped?null:parseFraction(raw),valid=skipped||parsed!==null;
+  if(!valid){toast('Use a number, decimal, or fraction like 3/4.');return;}
+  const correct=!skipped&&equal(parsed,q.answer),player=s.turn;
+  const result={raw:skipped?'Skipped':String(raw).trim(),correct,skipped,hint:s.hintShown};
+  s.answers[player][s.idx]=result;
+  if(correct){s.scores[player]+=100;s.streaks[player]++;s.best=Math.max(s.best,s.streaks[player]);}
+  else{s.streaks[player]=0;}
+  if(s.mode==='duel'&&player===0){s.stage='handoff';s.turn=1;}
+  else{s.stage='feedback';}
+  s.hintShown=false;
+  renderQuiz();
+}
+function moveOn(){
+  if(!session)return;
+  const s=session;
+  if(s.stage==='handoff'){s.stage='question';renderQuiz();return;}
+  if(s.stage!=='feedback')return;
+  s.idx++;s.turn=0;s.hintShown=false;s.stage='question';
+  if(s.idx>=s.questions.length){finishSession();return;}
+  renderQuiz();
+}
+function finishSession(){
+  const s=session;if(!s||s.finished)return;s.finished=true;
+  const count=s.questions.length,correct=s.answers[0].filter(v=>v?.correct).length+(s.mode==='duel'?s.answers[1].filter(v=>v?.correct).length:0),attempts=count*(s.mode==='duel'?2:1);
+  const gained=correct*15 + (s.mode==='duel'?10:25);
+  stats.xp+=gained;stats.played++;stats.correct+=correct;stats.total+=attempts;stats.best=Math.max(stats.best,s.best);
+  stats.history.unshift({at:new Date().toISOString(),grade:s.grade,mode:s.mode,skill:s.skill,score:s.scores[0],score2:s.scores[1],correct,attempts});
+  stats.history=stats.history.slice(0,25);saveStats();renderResults(gained);
+}
+function showHint(){if(session){session.hintShown=true;const el=$('#hint-container');if(el)el.innerHTML=`<div class="hint-box">💡 ${esc(session.questions[session.idx].hint)}</div>`;$('#hint-btn')?.setAttribute('disabled','true');}}
+function quizSidebar(){const s=session;return `<aside class="quiz-side"><div class="panel"><h2>Live scoreboard</h2>${s.players.slice(0,s.mode==='duel'?2:1).map((name,i)=>`<div class="score-card"><span class="score-name">${s.mode==='duel'?(i===0?'🔵':'🟡'):'✦'} ${esc(name)}</span><span class="score-points">${s.scores[i]}</span></div>`).join('')}<div class="divider-line"></div><div class="aside-caption">100 points per correct answer. No timer — focus on working it out.</div></div><div class="game-tip"><div style="font-size:30px">📘</div><h3>Maths tip</h3><p>${s.skill==='puzzles'?'Write down what you know before working out the unknown.': 'For fraction questions, simplify your final answer. Equivalent fractions also count as correct.'}</p></div>${s.mode==='friend'?`<div class="panel"><h2>Your friend code</h2><div class="code-card"><strong class="code-value">${esc(s.code)}</strong>${btn('Copy code','copy-code')}</div><p class="mini-note">A friend can enter this on their own device to play the same questions.</p></div>`:''}</aside>`;}
+function renderQuiz(){
+  const s=session;if(!s)return;
+  const q=s.questions[s.idx],isDuel=s.mode==='duel',percent=(s.idx+(s.stage==='feedback'?1:0))/s.questions.length*100;
+  let body='';
+  if(s.stage==='handoff')body=`<div class="handoff-view"><div class="handoff-emoji">🤝</div><h2>Pass it to ${esc(s.players[1])}!</h2><p>${esc(s.players[0])}'s answer is locked in.<br>The next player will solve the <strong>same question</strong>.</p>${btn(`I'm ready, ${s.players[1]}`,'next-btn','primary-btn navy')}</div>`;
+  else if(s.stage==='question')body=`${isDuel?`<div class="turn-banner ${s.turn===1?'p2':''}">${s.turn===0?'🔵':'🟡'} ${esc(s.players[s.turn])}'s turn — question ${s.idx+1}</div>`:''}
+    <div class="problem-zone"><span class="puzzle-tag">${esc(q.topic)} ${q.kind==='fraction'?'✦ FRACTIONS':'✦ MATHS PUZZLE'}</span><h2>${q.prompt}</h2><p class="question-subtitle">${q.kind==='fraction'?'Calculate the answer and give it in its simplest form.':'Enter the numerical answer. Include no units.'}</p></div>
+    <form id="answer-form" class="answer-box"><label for="answer-input">Your answer</label><div class="answer-field"><input class="answer-input" id="answer-input" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" placeholder="e.g. 3/4 or 1.5" aria-label="Your numerical answer" required><button class="primary-btn navy" type="submit">Check answer</button></div><div class="answer-hint">Accepts whole numbers, decimals, fractions (3/4) and mixed numbers (1 1/2).</div></form>
+    <div id="hint-container"></div><div class="quiz-actions">${btn('💡 Give me a hint','hint-btn','text-btn')}${btn('Skip question','skip-btn','text-btn')}</div>`;
+  else {
+    const a=s.answers[0][s.idx],b=s.answers[1][s.idx];
+    let content;
+    if(!isDuel)content=`<b>${a.correct?'🌟 Brilliant work!':'📘 Good attempt — keep going!'}</b><div>Your answer: <strong>${esc(a.raw)}</strong> ${a.correct?'✓':'✗'}</div><div>Correct answer: <strong>${esc(fractionText(q.answer))}</strong></div>`;
+    else content=`<b>Round ${s.idx+1} scores</b><div>🔵 ${esc(s.players[0])}: <strong>${esc(a.raw)}</strong> ${a.correct?'✓':'✗'}</div><div>🟡 ${esc(s.players[1])}: <strong>${esc(b.raw)}</strong> ${b.correct?'✓':'✗'}</div><div>Correct answer: <strong>${esc(fractionText(q.answer))}</strong></div>`;
+    body=`<div class="problem-zone"><span class="puzzle-tag">${esc(q.topic)}</span><h2>${q.prompt}</h2></div><div class="result-box ${isDuel?'neutral':a.correct?'good':'bad'}">${content}<p>${esc(q.explanation)}</p></div><div style="margin-top:18px">${btn(s.idx+1===s.questions.length?'Finish round →':'Next question →','next-btn','primary-btn navy')}</div>`;
+  }
+  app.innerHTML=`<div class="quiz-layout"><div class="quiz-nav"><div class="quiz-breadcrumb"><span class="crumb">Grade ${s.grade}</span><span class="crumb gold">${esc(skillLabels[s.skill])}</span><span class="crumb">${esc(modeLabels[s.mode])}</span></div>${btn('✕ Exit','exit-btn','text-btn')}</div>
+  <div class="quiz-grid"><div class="quiz-main"><div class="progress-head"><span>Question <strong>${s.idx+1} of ${s.questions.length}</strong></span><span>${Math.round(percent)}% complete</span></div><div class="progress"><span style="width:${percent}%"></span></div>${body}</div>${quizSidebar()}</div></div>`;
+  $('#exit-btn').addEventListener('click',cancel);
+  if($('#answer-form'))$('#answer-form').addEventListener('submit',e=>{e.preventDefault();record($('#answer-input').value)});
+  if($('#hint-btn'))$('#hint-btn').addEventListener('click',showHint);
+  if($('#skip-btn'))$('#skip-btn').addEventListener('click',()=>record('',true));
+  if($('#next-btn'))$('#next-btn').addEventListener('click',moveOn);
+  if($('#copy-code'))$('#copy-code').addEventListener('click',copyCode);
+  if(s.stage==='question')$('#answer-input')?.focus({preventScroll:true});
+}
+async function copyCode(){if(!session?.code)return;try{await navigator.clipboard.writeText(session.code);toast('Challenge code copied!');}catch{toast('Copy the code shown above to share it.');}}
+function renderResults(gained){
+  const s=session,count=s.questions.length,a=s.answers[0].filter(v=>v?.correct).length,b=s.answers[1].filter(v=>v?.correct).length;
+  const duel=s.mode==='duel';const winner=a===b?'It’s a tie!':`${esc(s.players[a>b?0:1])} takes the win!`;
+  const headline=duel?winner:a===count?'A perfect round!':a>=Math.ceil(count*.7)?'Great going!':'Every question makes you stronger.';
+  app.innerHTML=`<div class="result-page"><div class="result-hero"><div class="trophy">${duel?'🏆':a===count?'🏆':'🌴'}</div><div class="eyebrow">Round complete • Grade ${s.grade}</div><h1>${headline}</h1><p>${duel?'Two players, one maths challenge.':`You answered ${a} of ${count} questions correctly.`} Keep practising to build skill and confidence.</p></div>
+  <div class="results-grid"><div class="result-stat"><b>${duel?`${a}–${b}`:`${a}/${count}`}</b><span>${duel?'Final result':'Correct answers'}</span></div><div class="result-stat"><b>${Math.round((duel?a+b:a)/(duel?count*2:count)*100)}%</b><span>Accuracy</span></div><div class="result-stat"><b>+${gained}</b><span>XP earned</span></div></div>
+  ${s.mode==='friend'?`<section class="panel"><h2>Challenge a friend</h2><p class="mini-note">Send the code below and compare your scores once they've finished. Friends play the same exact round independently; this version does not sync scores online.</p><div class="code-card"><strong class="code-value">${esc(s.code)}</strong>${btn('Copy challenge code','copy-results-code')} ${btn('Copy my result','copy-score','secondary-btn')}</div></section>`:''}
+  <section class="panel"><div class="panel-heading"><h2>Answer review</h2><span class="section-sub">Learn from every problem</span></div><div class="review-list">${s.questions.map((q,i)=>{
+    const a=s.answers[0][i],b=s.answers[1][i];return `<div class="review-item"><div class="review-q">${a.correct?'✓':'○'} ${i+1}. ${esc(q.topic)} ${duel?`· ${esc(s.players[0])} ${a.correct?'✓':'✗'} · ${esc(s.players[1])} ${b.correct?'✓':'✗'}`:''}</div><div class="review-a">Correct answer: <strong>${esc(fractionText(q.answer))}</strong> — ${esc(q.explanation)}</div></div>`;
+  }).join('')}</div><div class="result-buttons">${btn('Play again ↻','replay-btn','primary-btn navy')}${btn('Change grade or mode','home-btn')}</div></section></div>`;
+  $('#replay-btn').addEventListener('click',()=>createSession(s.mode,s.mode==='friend'?s.seed:Math.floor(Math.random()*4294967295),s.code));
+  $('#home-btn').addEventListener('click',home);
+  if($('#copy-results-code'))$('#copy-results-code').addEventListener('click',copyCode);
+  if($('#copy-score'))$('#copy-score').addEventListener('click',async()=>{const msg=`Maths Haven — Grade ${s.grade} | ${skillLabels[s.skill]} | Score: ${a}/${count} (${Math.round(a/count*100)}%). Challenge code: ${s.code}`;try{await navigator.clipboard.writeText(msg);toast('Your result is copied!');}catch{toast('Select and copy the challenge details manually.');}});
+  window.scrollTo?.({top:0,behavior:'smooth'});
+}
+$('#home-link').addEventListener('click',e=>{e.preventDefault();home();});
+refreshXP();
+const urlCode=new URLSearchParams(location.search).get('challenge');
+if(urlCode){const decoded=decodeCode(urlCode);if(decoded){Object.assign(cfg,{grade:decoded.grade,skill:decoded.skill,op:decoded.op,count:decoded.count,mode:'friend',challengeCode:decoded.code});}}
+home();
+/* Standalone prototype: service worker will be added with the production app. */
+window.IslandMathTest={generateSet,parseFraction,equal,R,decodeCode,generateFraction,generatePuzzle};
+
+</script>
+</body>
+</html>
