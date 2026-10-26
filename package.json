@@ -1,0 +1,12 @@
+{
+  "name": "maths-haven",
+  "private": true,
+  "version": "0.1.0-prototype",
+  "description": "Caribbean maths practice prototype with Apex planning standards",
+  "scripts": {
+    "test:unit": "node --test tests/math.test.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
